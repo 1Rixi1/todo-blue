@@ -15,7 +15,7 @@ const log = (store) => (next) => (action) => {
   console.log('ВЫПОЛНИЛСЯ ЭКШН!', store, action);
 
   if (action.type === 'ADD_TASK') {
-    axios.post('https://61ba2ba348df2f0017e5a968.mockapi.io/tasks', action.payload);
+    axios.post('https://62cd07e7a43bf78008509237.mockapi.io/users', action.payload);
     setTimeout(() => {
       next(action);
     }, 5000);
